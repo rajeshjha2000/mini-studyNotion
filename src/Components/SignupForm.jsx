@@ -125,7 +125,7 @@ const SignupForm = (props) => {
         </label>
 
         <div className="flex gap-x-4">
-          <label htmlFor="w-full relative">
+          <label className="w-full relative">
             <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]">
               Create Password
               <sup className="text-pink-200">*</sup>
