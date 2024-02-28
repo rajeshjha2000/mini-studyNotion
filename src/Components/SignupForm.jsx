@@ -4,8 +4,7 @@ import { toast } from "react-hot-toast";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 
-const SignupForm = (props) => {
-  const setIsLoggedIn = props.setIsLoggedIn;
+const SignupForm = ({setIsLoggedIn}) => {
 
   const navigate = useNavigate();
 
