@@ -52,22 +52,21 @@ const SignupForm = ({setIsLoggedIn}) => {
     <div>
       <div className="flex bg-richblack-800 p-1 gap-x-1 rounded-full max-w-max">
         <button
-          onclick={() => setAccountType("student")}
-          className={`${
-            accountType === "student"
-              ? "bg-richblack-900 text-richblack-5"
-              : "bg-transparent text-richblack-200 "
-          } py-2 px-5 rounded-full transition-all`}
+          className={ `${accountType === "student"
+              ?
+               "bg-richblack-900 text-richblack-5"
+              : "bg-transparent text-richblack-200"} py-2 px-5 rounded-full transition-all duration-200`}
+              onClick={() => setAccountType("student")}
         >
-          Student
+          Student 
         </button>
         <button
-          onclick={() => setAccountType("instructor")}
-          className={`${
-            accountType === "instructor"
-              ? "bg-richblack-900 text-richblack-5"
+          className={ `${accountType === "instructor"
+              ? 
+              "bg-richblack-900 text-richblack-5"
               : "bg-transparent text-richblack-200 "
-          } py-2 px-5 rounded-full transition-all`}
+          } py-2 px-5 rounded-full transition-all duration-200`}
+          onClick={() => setAccountType("instructor")}
         >
           Instructor
         </button>
